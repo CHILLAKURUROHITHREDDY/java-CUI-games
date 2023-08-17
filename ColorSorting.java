@@ -3,8 +3,6 @@
  * 04/12/2022
  * It is the game to sort colors in the tube
  */
-package games;
-
 import java.util.Scanner;
 import java.util.Random;
 import java.util.ArrayList;
