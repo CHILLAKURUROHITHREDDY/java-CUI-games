@@ -12,8 +12,6 @@
  *           When we sleep we get InterruptedExceptoin
  */
 
-package games;
-
 import java.util.Scanner;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
