@@ -5,15 +5,15 @@ import java.util.LinkedList;
 public class Chess {
 	
     static String board[][] = {
-    							{"r2","h2","b2","q1","k1","b1","h1","r1"},
-    							{"p8","p7","p6","p5","p4","p3","p2","p1"},
-    							{"  ","  ","  ","  ","  ","  ","  ","  "},
-    							{"  ","  ","  ","  ","  ","  ","  ","  "},
-    							{"  ","  ","  ","  ","  ","  ","  ","  "},
-    							{"  ","  ","  ","  ","  ","  ","  ","  "},
-    							{"P1","P2","P3","P4","P5","P6","P7","P8"},
-    							{"R1","H1","B1","Q1","K1","B2","H2","R2"}
-        					  };
+    				{"r2","h2","b2","q1","k1","b1","h1","r1"},
+    				{"p8","p7","p6","p5","p4","p3","p2","p1"},
+    				{"  ","  ","  ","  ","  ","  ","  ","  "},
+    				{"  ","  ","  ","  ","  ","  ","  ","  "},
+    				{"  ","  ","  ","  ","  ","  ","  ","  "},
+    				{"  ","  ","  ","  ","  ","  ","  ","  "},
+    				{"P1","P2","P3","P4","P5","P6","P7","P8"},
+    				{"R1","H1","B1","Q1","K1","B2","H2","R2"}
+        		      };
     static LinkedList<String> white = new LinkedList<String>();
     static LinkedList<String> black = new LinkedList<String>();
     static LinkedList<String> caslingList = new LinkedList<String>();
