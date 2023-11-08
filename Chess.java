@@ -5,22 +5,22 @@ import java.util.LinkedList;
 public class Chess {
 	
     static String board[][] = {
-    				{"r2","h2","b2","q1","k1","b1","h1","r1"},
-    				{"p8","p7","p6","p5","p4","p3","p2","p1"},
-    				{"  ","  ","  ","  ","  ","  ","  ","  "},
-    				{"  ","  ","  ","  ","  ","  ","  ","  "},
-    				{"  ","  ","  ","  ","  ","  ","  ","  "},
-    				{"  ","  ","  ","  ","  ","  ","  ","  "},
-    				{"P1","P2","P3","P4","P5","P6","P7","P8"},
-    				{"R1","H1","B1","Q1","K1","B2","H2","R2"}
-        		      };
+    							{"r2","h2","b2","q1","k1","b1","h1","r1"},
+    							{"p8","p7","p6","p5","p4","p3","p2","p1"},
+    							{"  ","  ","  ","  ","  ","  ","  ","  "},
+    							{"  ","  ","  ","  ","  ","  ","  ","  "},
+    							{"  ","  ","  ","  ","  ","  ","  ","  "},
+    							{"  ","  ","  ","  ","  ","  ","  ","  "},
+    							{"P1","P2","P3","P4","P5","P6","P7","P8"},
+    							{"R1","H1","B1","Q1","K1","B2","H2","R2"}
+        					  };
     static LinkedList<String> white = new LinkedList<String>();
     static LinkedList<String> black = new LinkedList<String>();
     static LinkedList<String> caslingList = new LinkedList<String>();
     static LinkedList<String> powers = new LinkedList<String>();
     static Scanner scan = new Scanner(System.in);
     
-    public chess() {
+    public Chess() {
     	
     	white.addAll(Arrays.asList("K1","Q1","B1","B2","H1","H2","R1","R2","P1","P2","P3","P4","P5","P6","P7","P8"));
     	black.addAll(Arrays.asList("k1","q1","b1","b2","h1","h2","r1","r2","p1","p2","p3","p4","p5","p6","p7","p8"));
@@ -30,7 +30,7 @@ public class Chess {
     }
     public static void main(String args[]) {
     	
-    	new chess();
+    	new Chess();
     	instructions();
         white(white,black);
     }
