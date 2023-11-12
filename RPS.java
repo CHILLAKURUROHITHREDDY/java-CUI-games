@@ -8,13 +8,18 @@ public class RPS{
 		Random rad = new Random();
 		int computerscore = 0, playerscore = 0, draw = 0;
 		byte computer, player;
+
+		// Game loop
 		while(true){
-			computer = (byte) (rad.nextInt(2)+1);
+			
+			computer = (byte) (rad.nextInt(2)+1); // Generating random computer choice (1 to 3)
 			System.out.print("Enter 0 to exit\nEnter 1 for rock\nEnter 2 for paper\nEnter 3 for scissor\nEnter your choice = ");
 			player = in.nextByte();
 			if(player == 0){
-				break;
+				break; // Exit the game loop
 			}
+
+			// Display computer's choice
 			if(computer == 1){
 				System.out.println("\nComputer choice = rock");
 			}
@@ -26,6 +31,8 @@ public class RPS{
 			}
 			
 			byte result = RPS.resultCheck(computer, player);
+
+			// Update scores based on the result
 			if(result == -1)
 				computerscore++;
 			else if(result == 0)
@@ -36,12 +43,15 @@ public class RPS{
 				System.out.println("!!! Please enter correct choice !!!\n");
 			
 		}
-		in.close();
+		in.close(); // Close the Scanner
+
+		// Display final scores
 		System.out.println("\nComputer score = "+computerscore);
 		System.out.println("Player score = "+playerscore);
 		System.out.print("Draw score = "+draw);
 	}
-	
+
+	// Method to check the result of the game 
 	static byte resultCheck(int computer, int player) {
 		
 		if(computer == player){
@@ -65,6 +75,6 @@ public class RPS{
 			return -1;
 		}
 		
-		return -2;
+		return -2; // Indicates an unexpected result
 	}
 }
