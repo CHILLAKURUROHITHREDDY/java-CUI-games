@@ -9,6 +9,8 @@ public class RPS{
 		int computerscore = 0, playerscore = 0, draw = 0;
 		byte computer, player;
 
+		System.out.println("Rock Paper Scissors game\n");
+		
 		// Game loop
 		while(true){
 			
