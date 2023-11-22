@@ -19,7 +19,7 @@ public class TicTacToe	{
 		else
 			computerPlay = false;
 		
-		if(!computerPlay){
+		if(computerPlay){
 			
 			// Setting computer symbol based on player symbol
 			System.out.print("Enter your choice = ");
@@ -36,8 +36,12 @@ public class TicTacToe	{
 			// Setting player 1 and player 2 symbols
 			System.out.print("Enter player 1 choice = ");
 			playersymbol = in.next().charAt(0);
-			System.out.print("Enter player 2 choice = ");
-			computersymbol = in.next().charAt(0);
+			while(true){
+				System.out.print("Enter player 2 choice = ");
+				computersymbol = in.next().charAt(0);
+				if(playersymbol != computersymbol)
+					break;
+			}
 		}
 		TicTacToe.print(gameBox); // Printing game box
 		
